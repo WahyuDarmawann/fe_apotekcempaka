@@ -9,6 +9,7 @@ function App() {
       </div>
       <div>
         <Footer/>
+        <p>Janvukkkk</p>
       </div>  
     </div>
   );
