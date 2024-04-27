@@ -5,13 +5,13 @@ import apotekcempakaFooter from '../assets/apotekcempaka_footer.svg'
 function Footer(){
     return(
         <React.Fragment>
-            <footer className="min-h-96 py-7 px-10 bg-primari">
+            <footer className="min-h-64 py-7 px-10 bg-primari">
                     <div className="flex justify-between items-center">
                         <div>
                             <img src={apotekcempakaFooter}></img>
                             <p className="py-2 text-xl text-sekunder tracking-widest">Teman sehatmu setiap saat!</p>
                         </div>
-                        <div className="nav-navigation list-none">
+                        <div className="nav-navigation list-none text-lg font-semibold">
                             <li className="px-4 text-sekunder"><a href="#">Beranda</a></li>
                             <li className="px-4 text-sekunder"><a href="#">Profil</a></li>
                             <li className="px-4 text-sekunder"><a href="#">Produk</a></li>
