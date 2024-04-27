@@ -5,6 +5,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      colors: {
+        'primari': '#3161A3',
+        'sekunder': '#EBFFFB'
+      },
+
       backgroundImage: {
         'landing-background': "url('/src/assets/bg-landing_page.svg')"
       }
