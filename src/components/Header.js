@@ -2,10 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import apotekcempaka from '../assets/apotekcempaka.svg';
-import { useNavigate } from "react-router-dom";
 
 function Header(){
-    const navigasi = useNavigate()
     return(
         <React.Fragment>
             <nav className="py-7 px-10 bg-blue-600">

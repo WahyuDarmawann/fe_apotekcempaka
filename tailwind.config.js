@@ -4,7 +4,11 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'landing-background': "url('/src/assets/bg-landing_page.svg')"
+      }
+    },
   },
   plugins: [
     
