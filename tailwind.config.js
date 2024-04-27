@@ -4,9 +4,15 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
-    colors: {
-      'primari': '#3161A3',
-      'sekunder': '#EBFFFB'
+    extend: {
+      colors: {
+        'primari': '#3161A3',
+        'sekunder': '#EBFFFB'
+      },
+
+      backgroundImage: {
+        'landing-background': "url('/src/assets/bg-landing_page.svg')"
+      }
     },
   },
   plugins: [
