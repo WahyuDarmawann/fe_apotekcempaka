@@ -15,7 +15,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        'landing-background': "url('/src/assets/bg-landing_page.svg')"
+        'landing-background': "url('/src/assets/bg-landing_page.svg')",
+        'footer-background': "url('/src/assets/bg-footer.svg')"
       }
     },
   },
