@@ -11,14 +11,14 @@ function Header(){
                     <div className="nav-image">
                         <img src={apotekcempaka} alt="logo apotek" />
                     </div>
-                    <div className="nav-navigation flex list-none">
+                    <div className="nav-navigation flex list-none font-poppins font-semibold">
                         <li className="px-4 text-sekunder"><a href="/">Beranda</a></li>
                         <li className="px-4 text-sekunder"><a href="/profil">Profil</a></li>
                         <li className="px-4 text-sekunder"><a href="/produk">Produk</a></li>
                         <li className="px-4 text-sekunder"><a href="/kontak">Kontak</a></li>
                     </div>
                     <div className="login_logo text-sekunder">
-                        <FontAwesomeIcon icon={faArrowRightToBracket} />
+                        <a target="blank" href="https://wa.me/6281916618985?text=Halo"><FontAwesomeIcon icon={faArrowRightToBracket} /></a>
                     </div>
                 </div>  
             </nav>
