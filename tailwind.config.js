@@ -17,6 +17,7 @@ module.exports = {
       backgroundImage: {
         'landing-background': "url('/src/assets/bg-landing_page.svg')",
         'footer-background': "url('/src/assets/bg-footer.svg')",
+        'kontak-background': "url(/src/assets/bg_kontak.svg)",
         'landing-profil': "url('/src/assets/bg_profil.svg')"
       }
     },
