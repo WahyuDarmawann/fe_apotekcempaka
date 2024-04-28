@@ -13,7 +13,7 @@ function Header(){
                     </div>
                     <div className="nav-navigation flex list-none font-poppins font-semibold">
                         <li className="px-4 text-sekunder"><a href="/">Beranda</a></li>
-                        <li className="px-4 text-sekunder"><a href="/profil">Profil</a></li>
+                        <li className="px-4 text-sekunder"><a href="/profil">Profil Apotek</a></li>
                         <li className="px-4 text-sekunder"><a href="/produk">Produk</a></li>
                         <li className="px-4 text-sekunder"><a href="/kontak">Kontak</a></li>
                     </div>
