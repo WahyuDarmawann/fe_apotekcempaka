@@ -1,8 +1,29 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTelegram } from "@fortawesome/free-brands-svg-icons";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+function sendMessageToWhatsapp(nama, pesan) {
+  const phoneNumber = '6281913506952'; // Ganti dengan nomor telepon penerima
+  const message = `Halo, saya ${nama}. Pesan saya: ${pesan}`;
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
+}
+
 function Kontak() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const nama = e.target.nama.value;
+        const pesan = e.target.pesan.value;
+        sendMessageToWhatsapp(nama, pesan);
+    };
+
     return (
         <React.Fragment>
             <Header/>
@@ -20,18 +41,27 @@ function Kontak() {
                         </div>
                         <div className="bg-primari rounded shadow-2xl px-5 py-5">
                             <p className="text-sekunder uppercase text-xl font-bold">Media Sosial</p>
+                            <div className="text-3xl text-sekunder py-2">
+                                <a href="#"><FontAwesomeIcon className="mr-2 px-2" icon={faInstagram} /></a>
+                                <a href="#"><FontAwesomeIcon className="mr-2 px-2" icon={faTelegram} /></a>
+                                <a href="#"><FontAwesomeIcon className="mr-2 px-2" icon={faXTwitter} /></a>
+                                <a href="#"><FontAwesomeIcon className="mr-2 px-2" icon={faTiktok} /></a>
+                                <a href="#"><FontAwesomeIcon className="mr-2 px-2" icon={faFacebook} /></a>
+                                <a href="#"><FontAwesomeIcon className="mr-2 px-2" icon={faYoutube} /></a>
+                            </div>
                         </div>
                     </div>
                     <div className="bg-primari rounded shadow-2xl px-5 py-5">
                         <p className="text-sekunder uppercase text-xl font-bold">Kirim Pesan</p>
-                        <form class="max-w-auto mx-auto py-5">
-                            <div class="mb-5">
-                                <label for="nama" className="block mb-2 text-sm font-medium text-sekunder dark:text-white">Nama</label>
+                        <form onSubmit={handleSubmit}>
+                            <div className="mb-5">
+                                <label htmlFor="nama" className="block mb-2 text-sm font-medium text-sekunder dark:text-white">Nama</label>
                                 <input type="text" id="nama" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ketik nama anda disini..." required />
                             </div>
-                            <div class="mb-5">
-                            <label for="message" class="block mb-2 text-sm font-medium text-sekunder dark:text-white">Pesan</label>
-                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ketik pesan anda disini..."></textarea>                            </div>
+                            <div className="mb-5">
+                                <label htmlFor="pesan" className="block mb-2 text-sm font-medium text-sekunder dark:text-white">Pesan</label>
+                                <textarea id="pesan" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ketik pesan anda disini..."></textarea>                            
+                            </div>
                             <button type="submit" className="text-primari bg-sekunder hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Kirim</button>
                         </form>
                     </div>
@@ -42,4 +72,4 @@ function Kontak() {
     )
 }
 
-export default Kontak
+export default Kontak;
