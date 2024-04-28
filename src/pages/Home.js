@@ -41,7 +41,7 @@ function Home() {
                         <ButtonProfil/>
                     </div>
                     <div className="">
-                        <img className="aspect-square w-80 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]" src={ilustrasi_obat} alt="ilustrasi_obat" />
+                        <img className="aspect-square w-80" src={ilustrasi_obat} alt="ilustrasi_obat" />
                     </div>
                 </div>
             </section>
