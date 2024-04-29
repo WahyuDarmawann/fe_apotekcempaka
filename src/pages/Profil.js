@@ -7,9 +7,9 @@ function Profil() {
         <React.Fragment>
             <Header/>
             <section className="min-h-screen max-w-full">
-                <div className="bg-[url('/src/assets/bg_profil.svg')] py-28 flex justify-center items-center">
+                <div className="bg-[url('/src/assets/bg_profil.svg')] min-h-40 flex justify-center items-center">
                     <div className="flex flex-col items-center justify-center text-sekunder font-poppins">
-                        <h2 className="text-3xl uppercase font-bold tracking-widest mb-1">Profil Apotek</h2>
+                        <h2 className="text-5xl uppercase font-bold tracking-widest mb-1">Profil Apotek</h2>
                     </div>
                 </div>
 
