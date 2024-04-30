@@ -9,7 +9,7 @@ function Header(){
             <nav className="py-7 px-10 bg-primari">
                 <div className="flex justify-between items-center">
                     <div className="nav-image">
-                        <img src={apotekcempaka} alt="logo apotek" />
+                        <a href="/"><img src={apotekcempaka} alt="logo apotek" /></a>
                     </div>
                     <div className="nav-navigation flex list-none font-poppins font-semibold">
                         <li className="px-4 text-sekunder"><a href="/">Beranda</a></li>
@@ -18,7 +18,7 @@ function Header(){
                         <li className="px-4 text-sekunder"><a href="/kontak">Kontak</a></li>
                     </div>
                     <div className="login_logo text-sekunder">
-                        <a target="blank" href="https://wa.me/6281916618985?text=Halo"><FontAwesomeIcon icon={faArrowRightToBracket} /></a>
+                        <FontAwesomeIcon icon={faArrowRightToBracket} />
                     </div>
                 </div>  
             </nav>

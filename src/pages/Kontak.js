@@ -10,9 +10,9 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function sendMessageToWhatsapp(nama, pesan) {
-  const phoneNumber = '6281913506952'; // Ganti dengan nomor telepon penerima
+  const phoneNumber = '6281236033673'; // Ganti dengan nomor telepon penerima
   const message = `Halo, saya ${nama}. Pesan saya: ${pesan}`;
-  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const url = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
   window.open(url, '_blank');
 }
 
