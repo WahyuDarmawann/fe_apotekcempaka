@@ -31,7 +31,7 @@ function Footer(){
                         </div>
                     </div>
             </footer>
-            <div class="bg-primari py-3 flex justify-center items-center text-sekunder text-base font-poppins">
+            <div className="bg-primari py-3 flex justify-center items-center text-sekunder text-base font-poppins">
                 <p>&copy; 2024 Apotek Cempaka. Hak cipta dilindungi.</p>
             </div>
         </React.Fragment>
